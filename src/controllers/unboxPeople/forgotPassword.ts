@@ -155,7 +155,7 @@ export const resetPassword: RequestHandler = async (req, res) => {
   let password = req.body.password;
   let confirmPassword = req.body.confirmPassword;
 
-  const saltRounds = parseInt(process.env.SALT_ROUNDS);
+  const saltRounds = 10;
   const salt = await bcrypt.genSalt(saltRounds);
   const hashPassword = await bcrypt.hash(password, salt);
   const data = {
