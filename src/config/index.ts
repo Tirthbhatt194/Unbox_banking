@@ -4,12 +4,12 @@ import { Dialect, Sequelize } from "sequelize";
 dotenv.config();
 
 //database connection config - fetch variable from env
-const database = process.env.db as string;
-const username = process.env.USER as string;
-const host = process.env.HOST as string;
-const password = process.env.PASSWORD as string;
-const dialect = process.env.DIALECT as Dialect;
-const port = process.env.DB_PORT as unknown as number;
+const database = "defaultdb";
+const username = "avnadmin";
+const host = "29310e9a-redtirth.k.aivencloud.com";
+const password = "AVNS_BJbN_ovubb-Evpaw5zT";
+const dialect = "mysql";
+const port = 10895;
 
 const db = new Sequelize({
   database: database,
