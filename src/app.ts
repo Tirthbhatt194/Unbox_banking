@@ -9,39 +9,37 @@ import cors from "cors";
 import cookieSession from "cookie-session";
 import { isActivePolicyInquiry } from "./controllers/policyInquiry/isActive";
 import cron from "node-cron";
+
 dotenv.config();
-const port = process.env.PORT as unknown as number;
 
 const app = express();
 
+// Middleware
 app.use(cors());
-
 app.use(bodyParser.json());
-
-app.use(
-  bodyParser.urlencoded({
-    extended: true,
-  })
-);
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(
   cookieSession({
     name: "unbox-session",
-    secret: process.env.COOKIE_SECRET, // should use as secret environment variable
+    secret: process.env.COOKIE_SECRET, // keep secret in env vars
     httpOnly: true,
   })
 );
-// main api route
+
+// Main API routes
 app.use("/api", router);
 app.use("/images", express.static("images"));
 
-// handel errors
+// 404 handler
 app.use(() => {
   throw createHttpError(404, "Route not found");
 });
 
+// Cron job (will run once when function container is warm)
 cron.schedule("0 0 * * *", isActivePolicyInquiry);
 
+// Error handler
 const errorHandler: ErrorRequestHandler = (err, req, res, next) => {
   log.info(err.message, err.statusCode);
   if (res.headersSent) {
@@ -54,15 +52,16 @@ const errorHandler: ErrorRequestHandler = (err, req, res, next) => {
 };
 app.use(errorHandler);
 
-// Connect to database and server
-db.authenticate()
-  .then(() => {
+// Connect to database once when serverless function starts
+(async () => {
+  try {
+    await db.authenticate();
     log.info("Connected to database");
-    app.listen(port, () => {
-      log.info(`Server running at Port ${port}`);
-    });
-  })
-  .catch((err) => {
+  } catch (err) {
     log.error(err);
     throw createHttpError(501, "Unable to connect database");
-  });
+  }
+})();
+
+// Export app for Vercel
+export default app;
