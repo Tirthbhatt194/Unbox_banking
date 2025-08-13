@@ -108,7 +108,7 @@ dotenv.config();
 
 export const createUnboxPeople: RequestHandler = async (req, res, next) => {
   try {
-    const saltRounds = parseInt(process.env.SALT_ROUNDS);
+    const saltRounds = 10;
 
     const numberExists = await unboxPeopleModel.findOne({
       where: { contactNumber: req.body.mobileNumber },
@@ -203,7 +203,7 @@ export const otpVerification: RequestHandler = async (req, res, next) => {
         id: createdUnboxPeople.id,
         email: createdUnboxPeople.email,
       },
-      process.env.AUTH_SECRET
+      "thisisunboxbankingencryptionsecretkeyforusertoken"
     );
 
     const updatedUnboxPeople1 = await unboxPeopleModel.update(
