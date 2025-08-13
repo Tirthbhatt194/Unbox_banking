@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   cookieSession({
     name: "unbox-session",
-    secret: process.env.COOKIE_SECRET, // keep secret in env vars
+    secret: "CookieSecretKey", // keep secret in env vars
     httpOnly: true,
   })
 );
