@@ -35,7 +35,7 @@ export const loginAccount: RequestHandler = async (req, res, next) => {
           id: user.dataValues.id,
           email: user.dataValues.email,
         },
-        process.env.AUTH_SECRET
+        "thisisunboxbankingencryptionsecretkeyforusertoken"
       );
       let date = new Date();
 
