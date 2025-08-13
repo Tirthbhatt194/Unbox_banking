@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.deletehomePage = exports.updatehomePage = exports.getAllhomePage = exports.getOnehomePage = exports.createHomePage = void 0;
+var create_1 = require("./create");
+Object.defineProperty(exports, "createHomePage", { enumerable: true, get: function () { return create_1.createHomePage; } });
+var getOne_1 = require("./getOne");
+Object.defineProperty(exports, "getOnehomePage", { enumerable: true, get: function () { return getOne_1.getOnehomePage; } });
+var getAll_1 = require("./getAll");
+Object.defineProperty(exports, "getAllhomePage", { enumerable: true, get: function () { return getAll_1.getAllhomePage; } });
+var update_1 = require("./update");
+Object.defineProperty(exports, "updatehomePage", { enumerable: true, get: function () { return update_1.updatehomePage; } });
+var delete_1 = require("./delete");
+Object.defineProperty(exports, "deletehomePage", { enumerable: true, get: function () { return delete_1.deletehomePage; } });

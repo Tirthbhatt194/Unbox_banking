@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getAllLoanInquiryInDetail = exports.getOneLoanInquiryInDetail = exports.deleteLoanInquiry = exports.updateLoanInquiry = exports.getAllLoanInquiry = exports.getOneLoanInquiry = exports.createLoanInquiry = void 0;
+var create_1 = require("./create");
+Object.defineProperty(exports, "createLoanInquiry", { enumerable: true, get: function () { return create_1.createLoanInquiry; } });
+var getOne_1 = require("./getOne");
+Object.defineProperty(exports, "getOneLoanInquiry", { enumerable: true, get: function () { return getOne_1.getOneLoanInquiry; } });
+var getAll_1 = require("./getAll");
+Object.defineProperty(exports, "getAllLoanInquiry", { enumerable: true, get: function () { return getAll_1.getAllLoanInquiry; } });
+var update_1 = require("./update");
+Object.defineProperty(exports, "updateLoanInquiry", { enumerable: true, get: function () { return update_1.updateLoanInquiry; } });
+var delete_1 = require("./delete");
+Object.defineProperty(exports, "deleteLoanInquiry", { enumerable: true, get: function () { return delete_1.deleteLoanInquiry; } });
+var getOneInDetail_1 = require("./getOneInDetail");
+Object.defineProperty(exports, "getOneLoanInquiryInDetail", { enumerable: true, get: function () { return getOneInDetail_1.getOneLoanInquiryInDetail; } });
+var getAllInDetail_1 = require("./getAllInDetail");
+Object.defineProperty(exports, "getAllLoanInquiryInDetail", { enumerable: true, get: function () { return getAllInDetail_1.getAllLoanInquiryInDetail; } });

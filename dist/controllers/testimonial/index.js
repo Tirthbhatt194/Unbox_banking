@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.testimonialImage = exports.deleteTestimonial = exports.updateTestimonial = exports.getAllTestimonial = exports.getOneTestimonial = exports.createTestimonial = void 0;
+var create_1 = require("./create");
+Object.defineProperty(exports, "createTestimonial", { enumerable: true, get: function () { return create_1.createTestimonial; } });
+var getOne_1 = require("./getOne");
+Object.defineProperty(exports, "getOneTestimonial", { enumerable: true, get: function () { return getOne_1.getOneTestimonial; } });
+var getAll_1 = require("./getAll");
+Object.defineProperty(exports, "getAllTestimonial", { enumerable: true, get: function () { return getAll_1.getAllTestimonial; } });
+var update_1 = require("./update");
+Object.defineProperty(exports, "updateTestimonial", { enumerable: true, get: function () { return update_1.updateTestimonial; } });
+var delete_1 = require("./delete");
+Object.defineProperty(exports, "deleteTestimonial", { enumerable: true, get: function () { return delete_1.deleteTestimonial; } });
+var create_2 = require("./create");
+Object.defineProperty(exports, "testimonialImage", { enumerable: true, get: function () { return create_2.testimonialImage; } });

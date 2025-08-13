@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.deleteAboutUs = exports.updateAboutUs = exports.getAllAboutUs = exports.getOneAboutUs = exports.createAboutUs = void 0;
+var create_1 = require("./create");
+Object.defineProperty(exports, "createAboutUs", { enumerable: true, get: function () { return create_1.createAboutUs; } });
+var getOne_1 = require("./getOne");
+Object.defineProperty(exports, "getOneAboutUs", { enumerable: true, get: function () { return getOne_1.getOneAboutUs; } });
+var getAll_1 = require("./getAll");
+Object.defineProperty(exports, "getAllAboutUs", { enumerable: true, get: function () { return getAll_1.getAllAboutUs; } });
+var update_1 = require("./update");
+Object.defineProperty(exports, "updateAboutUs", { enumerable: true, get: function () { return update_1.updateAboutUs; } });
+var delete_1 = require("./delete");
+Object.defineProperty(exports, "deleteAboutUs", { enumerable: true, get: function () { return delete_1.deleteAboutUs; } });

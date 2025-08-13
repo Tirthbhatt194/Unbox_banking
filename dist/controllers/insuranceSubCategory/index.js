@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.GetAllSubCategoryInDetail = exports.GetOneSubCategoryInDetail = exports.DeleteSubCategory = exports.UpdateSubCategory = exports.GetAllSubCategory = exports.GetOneSubCategory = exports.insuranceSubCategoryImage = exports.createInsuranceSubCategory = void 0;
+var create_1 = require("./create");
+Object.defineProperty(exports, "createInsuranceSubCategory", { enumerable: true, get: function () { return create_1.createInsuranceSubCategory; } });
+Object.defineProperty(exports, "insuranceSubCategoryImage", { enumerable: true, get: function () { return create_1.insuranceSubCategoryImage; } });
+var getOne_1 = require("./getOne");
+Object.defineProperty(exports, "GetOneSubCategory", { enumerable: true, get: function () { return getOne_1.GetOneSubCategory; } });
+var getAll_1 = require("./getAll");
+Object.defineProperty(exports, "GetAllSubCategory", { enumerable: true, get: function () { return getAll_1.GetAllSubCategory; } });
+var update_1 = require("./update");
+Object.defineProperty(exports, "UpdateSubCategory", { enumerable: true, get: function () { return update_1.UpdateSubCategory; } });
+var delete_1 = require("./delete");
+Object.defineProperty(exports, "DeleteSubCategory", { enumerable: true, get: function () { return delete_1.DeleteSubCategory; } });
+var getOneInDetails_1 = require("./getOneInDetails");
+Object.defineProperty(exports, "GetOneSubCategoryInDetail", { enumerable: true, get: function () { return getOneInDetails_1.GetOneSubCategoryInDetail; } });
+var getAllInDetails_1 = require("./getAllInDetails");
+Object.defineProperty(exports, "GetAllSubCategoryInDetail", { enumerable: true, get: function () { return getAllInDetails_1.GetAllSubCategoryInDetail; } });

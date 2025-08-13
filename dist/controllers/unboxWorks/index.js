@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.deleteUnboxWorks = exports.updateUnboxWorks = exports.getAllUnboxWorks = exports.getOneUnboxWorks = exports.image = exports.createUnboxWorks = void 0;
+var create_1 = require("./create");
+Object.defineProperty(exports, "createUnboxWorks", { enumerable: true, get: function () { return create_1.createUnboxWorks; } });
+Object.defineProperty(exports, "image", { enumerable: true, get: function () { return create_1.image; } });
+var getOne_1 = require("./getOne");
+Object.defineProperty(exports, "getOneUnboxWorks", { enumerable: true, get: function () { return getOne_1.getOneUnboxWorks; } });
+var getAll_1 = require("./getAll");
+Object.defineProperty(exports, "getAllUnboxWorks", { enumerable: true, get: function () { return getAll_1.getAllUnboxWorks; } });
+var update_1 = require("./update");
+Object.defineProperty(exports, "updateUnboxWorks", { enumerable: true, get: function () { return update_1.updateUnboxWorks; } });
+var delete_1 = require("./delete");
+Object.defineProperty(exports, "deleteUnboxWorks", { enumerable: true, get: function () { return delete_1.deleteUnboxWorks; } });

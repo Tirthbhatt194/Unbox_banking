@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.deletePrivacyPolicy = exports.updatePrivacyPolicy = exports.getAllPrivacyPolicy = exports.getOnePrivacyPolicy = exports.createPrivacyPolicy = void 0;
+var create_1 = require("./create");
+Object.defineProperty(exports, "createPrivacyPolicy", { enumerable: true, get: function () { return create_1.createPrivacyPolicy; } });
+var getOne_1 = require("./getOne");
+Object.defineProperty(exports, "getOnePrivacyPolicy", { enumerable: true, get: function () { return getOne_1.getOnePrivacyPolicy; } });
+var getAll_1 = require("./getAll");
+Object.defineProperty(exports, "getAllPrivacyPolicy", { enumerable: true, get: function () { return getAll_1.getAllPrivacyPolicy; } });
+var update_1 = require("./update");
+Object.defineProperty(exports, "updatePrivacyPolicy", { enumerable: true, get: function () { return update_1.updatePrivacyPolicy; } });
+var delete_1 = require("./delete");
+Object.defineProperty(exports, "deletePrivacyPolicy", { enumerable: true, get: function () { return delete_1.deletePrivacyPolicy; } });

@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getAllPolicyInquiryInDetail = exports.getOnePolicyInquiryInDetail = exports.deletePolicyInquiry = exports.updatePolicyInquiry = exports.getAllPolicyInquiry = exports.getOnePolicyInquiry = exports.createPolicyInquiry = void 0;
+var create_1 = require("./create");
+Object.defineProperty(exports, "createPolicyInquiry", { enumerable: true, get: function () { return create_1.createPolicyInquiry; } });
+var getOne_1 = require("./getOne");
+Object.defineProperty(exports, "getOnePolicyInquiry", { enumerable: true, get: function () { return getOne_1.getOnePolicyInquiry; } });
+var getAll_1 = require("./getAll");
+Object.defineProperty(exports, "getAllPolicyInquiry", { enumerable: true, get: function () { return getAll_1.getAllPolicyInquiry; } });
+var update_1 = require("./update");
+Object.defineProperty(exports, "updatePolicyInquiry", { enumerable: true, get: function () { return update_1.updatePolicyInquiry; } });
+var delete_1 = require("./delete");
+Object.defineProperty(exports, "deletePolicyInquiry", { enumerable: true, get: function () { return delete_1.deletePolicyInquiry; } });
+var getOneInDetail_1 = require("./getOneInDetail");
+Object.defineProperty(exports, "getOnePolicyInquiryInDetail", { enumerable: true, get: function () { return getOneInDetail_1.getOnePolicyInquiryInDetail; } });
+var getAllInDetail_1 = require("./getAllInDetail");
+Object.defineProperty(exports, "getAllPolicyInquiryInDetail", { enumerable: true, get: function () { return getAllInDetail_1.getAllPolicyInquiryInDetail; } });
